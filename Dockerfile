@@ -1,14 +1,12 @@
-FROM ruby:2.5.8
+FROM bitnami/ruby:2.5.8-debian-10-r26
 
 LABEL authors="Ataliba Teixeira <ataliba@protonmail.com>"
 
+RUN pt-get update -y
+RUN apt-get install  -y curl python3 python3-pip 
+
+RUN pip3 install --upgrade pip3
+RUN  pip3 install awscli
+
 RUN gem install jets 
-RUN  apk add --update \
-     python \
-     python-dev \
-     py-pip \
-     build-base \
-     && pip install awscli==$AWSCLI_VERSION --upgrade --user \
-     && apk --purge -v del py-pip \
-     && rm -rf /var/cache/apk/*
 
