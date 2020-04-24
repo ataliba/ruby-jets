@@ -1,4 +1,4 @@
-FROM ruby:2;5;8
+FROM ruby:2.5.7
 
 LABEL authors="Ataliba Teixeira <ataliba@protonmail.com>"
 
