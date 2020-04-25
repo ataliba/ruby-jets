@@ -14,7 +14,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nginx openssh-server git-core openssh-client curl
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y python3 python3-pip nano
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y openssl curl zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev autoconf libc6-dev libncurses-dev automake libtool bison subversion pkg-config
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y zip openssl curl zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev autoconf libc6-dev libncurses-dev automake libtool bison subversion pkg-config
 RUN pip3 install pip 
 
 #Aws cli 
