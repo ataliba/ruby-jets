@@ -28,4 +28,3 @@ RUN /bin/bash -l -c "rvm requirements"
 RUN /bin/bash -l -c "rvm install 2.5.7"
 RUN /bin/bash -l -c "gem install jets bundler"
 
-#entrypoint /bin/bash -l -c "aws --version; rvm --version"
